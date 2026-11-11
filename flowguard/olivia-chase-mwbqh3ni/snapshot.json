@@ -1,0 +1,152 @@
+{
+  "flowguard_export_version": 1,
+  "exported_at": "2026-11-11T09:52:51.104Z",
+  "source": "connector-reported",
+  "project": {
+    "id": "olivia-chase-mwbqh3ni",
+    "name": "olivia chase",
+    "environment": "production"
+  },
+  "connector": {
+    "status": "disconnected",
+    "last_heartbeat_at": "2026-11-11T06:46:45.284+00:00",
+    "last_sync_at": "2026-11-11T06:46:45.284+00:00"
+  },
+  "application": {
+    "http_status": 401,
+    "response_time_ms": 169,
+    "availability_status": "degraded"
+  },
+  "database": {
+    "database_status": "up",
+    "last_checked_at": "2026-11-11T06:46:43.951Z",
+    "connectivity_check": true
+  },
+  "schema": {
+    "tables": [
+      {
+        "name": "olivia_owner",
+        "columns": [
+          {
+            "name": "id",
+            "type": "boolean",
+            "nullable": false
+          },
+          {
+            "name": "user_id",
+            "type": "text",
+            "nullable": false
+          },
+          {
+            "name": "email",
+            "type": "text",
+            "nullable": true
+          },
+          {
+            "name": "display_name",
+            "type": "text",
+            "nullable": true
+          },
+          {
+            "name": "claimed_at",
+            "type": "timestamp with time zone",
+            "nullable": false
+          }
+        ]
+      },
+      {
+        "name": "olivia_memories",
+        "columns": [
+          {
+            "name": "id",
+            "type": "uuid",
+            "nullable": false
+          },
+          {
+            "name": "label",
+            "type": "text",
+            "nullable": false
+          },
+          {
+            "name": "value",
+            "type": "text",
+            "nullable": false
+          },
+          {
+            "name": "category",
+            "type": "text",
+            "nullable": false
+          },
+          {
+            "name": "notes",
+            "type": "text",
+            "nullable": true
+          },
+          {
+            "name": "created_at",
+            "type": "timestamp with time zone",
+            "nullable": false
+          },
+          {
+            "name": "updated_at",
+            "type": "timestamp with time zone",
+            "nullable": false
+          }
+        ]
+      }
+    ],
+    "version": "postgrest-live-v1"
+  },
+  "storage": {
+    "status": "up",
+    "buckets": [],
+    "last_checked_at": "2026-11-11T06:46:45.149Z"
+  },
+  "capabilities": [
+    {
+      "capability": "app_health",
+      "status": "limited",
+      "detail": "Production HTTP availability only; private chat and email operations are not exercised."
+    },
+    {
+      "capability": "database_health",
+      "status": "verified",
+      "detail": "Real bounded database HEAD query; no row contents collected."
+    },
+    {
+      "capability": "schema_inventory",
+      "status": "limited",
+      "detail": "Live exposed public table and column metadata; hidden schemas and relationships are not reported."
+    },
+    {
+      "capability": "storage_inventory",
+      "status": "verified",
+      "detail": "Live storage API confirmed there are no buckets."
+    },
+    {
+      "capability": "events",
+      "status": "limited",
+      "detail": "Signed connector.test supported; business, deployment and error hooks are not installed."
+    },
+    {
+      "capability": "database_backup",
+      "status": "not_supported",
+      "detail": "No secure backup export capability available."
+    },
+    {
+      "capability": "storage_backup",
+      "status": "not_supported",
+      "detail": "Read-only connector never exports files."
+    }
+  ],
+  "recent_events": [
+    {
+      "type": "connector.test",
+      "occurred_at": "2026-11-11T06:35:12.231+00:00"
+    }
+  ],
+  "backups": {
+    "status": "unverified",
+    "note": "No backup data has been received and verified by FlowGuard."
+  }
+}
