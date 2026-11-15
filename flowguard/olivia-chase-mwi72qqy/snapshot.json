@@ -1,0 +1,154 @@
+{
+  "flowguard_export_version": 1,
+  "exported_at": "2026-11-15T19:10:24.448Z",
+  "source": "connector-reported",
+  "project": {
+    "id": "olivia-chase-mwi72qqy",
+    "name": "Olivia Chase",
+    "environment": "production"
+  },
+  "connector": {
+    "status": "connected",
+    "last_heartbeat_at": "2026-11-15T19:00:21.389+00:00",
+    "last_sync_at": "2026-11-15T19:00:21.389+00:00"
+  },
+  "application": {
+    "error_count": 0,
+    "http_status": 200,
+    "response_time_ms": 8,
+    "availability_status": "up"
+  },
+  "database": {
+    "database_status": "up",
+    "last_checked_at": "2026-11-15T19:00:16.504Z",
+    "connectivity_check": true,
+    "failed_operations_count": 0
+  },
+  "schema": {
+    "version": "ad7884d2c45fe52d",
+    "tables": [
+      {
+        "name": "olivia_memories",
+        "columns": [
+          {
+            "name": "id",
+            "type": "uuid",
+            "nullable": false
+          },
+          {
+            "name": "label",
+            "type": "text",
+            "nullable": false
+          },
+          {
+            "name": "value",
+            "type": "text",
+            "nullable": false
+          },
+          {
+            "name": "category",
+            "type": "text",
+            "nullable": false
+          },
+          {
+            "name": "notes",
+            "type": "text",
+            "nullable": true
+          },
+          {
+            "name": "created_at",
+            "type": "timestamp with time zone",
+            "nullable": false
+          },
+          {
+            "name": "updated_at",
+            "type": "timestamp with time zone",
+            "nullable": false
+          }
+        ]
+      },
+      {
+        "name": "olivia_owner",
+        "columns": [
+          {
+            "name": "id",
+            "type": "boolean",
+            "nullable": false
+          },
+          {
+            "name": "user_id",
+            "type": "text",
+            "nullable": false
+          },
+          {
+            "name": "email",
+            "type": "text",
+            "nullable": true
+          },
+          {
+            "name": "display_name",
+            "type": "text",
+            "nullable": true
+          },
+          {
+            "name": "claimed_at",
+            "type": "timestamp with time zone",
+            "nullable": false
+          }
+        ]
+      }
+    ]
+  },
+  "storage": {
+    "status": "up",
+    "buckets": [],
+    "last_checked_at": "2026-11-15T19:00:17.289Z"
+  },
+  "capabilities": [
+    {
+      "capability": "app_health",
+      "status": "verified",
+      "detail": null
+    },
+    {
+      "capability": "database_health",
+      "status": "verified",
+      "detail": null
+    },
+    {
+      "capability": "schema_inventory",
+      "status": "verified",
+      "detail": "table/column names and types via read-only metadata; RLS flags not reported"
+    },
+    {
+      "capability": "storage_inventory",
+      "status": "verified",
+      "detail": null
+    },
+    {
+      "capability": "events",
+      "status": "verified",
+      "detail": null
+    },
+    {
+      "capability": "database_backup",
+      "status": "verified",
+      "detail": "dry run: 2 tables, 9 rows"
+    },
+    {
+      "capability": "storage_backup",
+      "status": "verified",
+      "detail": "dry run: 0 files (manifest only)"
+    }
+  ],
+  "recent_events": [
+    {
+      "type": "connector.test",
+      "occurred_at": "2026-11-15T19:00:21.729+00:00"
+    }
+  ],
+  "backups": {
+    "status": "unverified",
+    "note": "No backup data has been received and verified by FlowGuard."
+  }
+}
