@@ -1,6 +1,6 @@
 {
   "flowguard_export_version": 1,
-  "exported_at": "2026-11-15T19:10:24.448Z",
+  "exported_at": "2026-11-16T13:18:13.606Z",
   "source": "connector-reported",
   "project": {
     "id": "olivia-chase-mwi72qqy",
@@ -9,18 +9,18 @@
   },
   "connector": {
     "status": "connected",
-    "last_heartbeat_at": "2026-11-15T19:00:21.389+00:00",
-    "last_sync_at": "2026-11-15T19:00:21.389+00:00"
+    "last_heartbeat_at": "2026-11-16T13:15:13.847+00:00",
+    "last_sync_at": "2026-11-16T13:15:13.847+00:00"
   },
   "application": {
     "error_count": 0,
     "http_status": 200,
-    "response_time_ms": 8,
+    "response_time_ms": 258,
     "availability_status": "up"
   },
   "database": {
     "database_status": "up",
-    "last_checked_at": "2026-11-15T19:00:16.504Z",
+    "last_checked_at": "2026-11-16T13:15:09.315Z",
     "connectivity_check": true,
     "failed_operations_count": 0
   },
@@ -102,7 +102,7 @@
   "storage": {
     "status": "up",
     "buckets": [],
-    "last_checked_at": "2026-11-15T19:00:17.289Z"
+    "last_checked_at": "2026-11-16T13:15:09.838Z"
   },
   "capabilities": [
     {

@@ -1,8 +1,8 @@
 # Olivia Chase — FlowGuard snapshot
 
-Exported: 2026-11-15T19:10:24.448Z
+Exported: 2026-11-16T13:18:13.606Z
 Environment: production
-Connector: connected (last heartbeat 2026-11-15T19:00:21.389+00:00, last sync 2026-11-15T19:00:21.389+00:00)
+Connector: connected (last heartbeat 2026-11-16T13:15:13.847+00:00, last sync 2026-11-16T13:15:13.847+00:00)
 
 All values are reported by the app's connector, not independently verified.
 Backups: unverified (no backup data received by FlowGuard).
